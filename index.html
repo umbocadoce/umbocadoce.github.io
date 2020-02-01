@@ -5,8 +5,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Um Bocado Doce</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="assets/css/sanitize.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    
 </head>
 <body>
   
@@ -18,8 +23,131 @@
 
     <section>
 
-      <article>
-        Conheça!
+      <article class="hero">
+        <div class="hero-carousel">
+          <div class="item" style="background-color: transparent;">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-5 item-text order-md-2">
+                  <h2 class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                  <a href="#">Saiba mais</a>
+                </div> 
+                <div class="col-12 col-md-6 order-md-1">
+                  <img src="assets/images/hero/hero-1.jpg">
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="item" style="background-color: transparent;">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-5 item-text order-md-2">
+                  <h2 class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                  <a href="#">Saiba mais</a>
+                </div> 
+                <div class="col-12 col-md-6 order-md-1">
+                  <img src="assets/images/hero/hero-2.jpg">
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="item" style="background-color: transparent;">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-5 item-text order-md-2">
+                  <h2 class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                  <a href="#">Saiba mais</a>
+                </div> 
+                <div class="col-12 col-md-6 order-md-1">
+                  <img src="assets/images/hero/hero-3.jpg">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>
+          
+          :root{
+            font-size: 16px;
+          }
+          body{
+            --colorPrimary: #2C0E37;
+            --colorSecondary: #5E0B15;
+            --colorTertiary: #E5989B;
+            --colorQuarternary: #FFB4A2;
+            --colorQuinary: #FFCDB2;
+            --colorSupport: #FFFFFF;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #4a4a4a;
+
+          }
+
+          h1, h2, h3, h4, h5, h6{
+            font-family: 'Arvo', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            color: var(--colorSecondary);
+
+          }
+
+          h1{
+            font-size: 3rem;
+          }
+          
+          h2{
+            font-size: 2.5rem;
+          }
+          
+          h3{
+            font-size: 1.7rem;
+          }
+
+          .hero .item {
+            width: 100%;
+            height: 100vh;
+            background: var(--colorTertiary);
+          }
+          .hero .item-text{
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+          }
+
+          .hero .item img{
+          object-fit: cover;
+          object-position: 50%;
+          width: 100%;
+          height: 100%;
+          }
+
+          .button{
+            padding: 0 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 10px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+          }
+
+          .button-primary{
+     
+          }
+        
+        
+        </style>
+
       </article>
 
       <article>
@@ -33,7 +161,9 @@
   <footer>
     Copyright direitos reservados.
   </footer>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src='main.js'></script>
 </body>
 </html>
