@@ -15,52 +15,116 @@
 </head>
 <body>
   
-  <header>
-    Um Bocado Doce
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="">
+          <img src="assets/images/logo/umbocadoce.png">
+        </a>
+      </div>
+      <nav class="menu">
+        <a href="">
+          <span>Macarons</span>
+        </a>
+        <a href="">
+          <span>Bolos</span>
+        </a>
+        <a href="">
+          <span>Sobre</span>
+        </a>
+      </nav>
+      </div>
+    </div>
+    
   </header>
+  <style>
+    .header{
+      padding: 25px 0 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;      
+    }
+
+    .header .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu{
+      display: flex;
+      flex-flow: row;
+
+    }
+
+    .menu a{
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 5px 30px;
+      display: block;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      text-align: center;
+      font-size: 18px;
+
+    }
+
+    .logo{
+      width: 169px;
+
+    }
+
+    .logo img{
+      max-width: 100%;
+      height: auto;
+    }
+    
+  </style>
 
   <main>
 
     <section>
 
       <article class="hero">
-        <div class="hero-carousel">
-          <div class="item" style="background-color: transparent;">
+        <div class="hero-carousel" id="hero">
+          <div class="item item-blue">
             <div class="container">
-              <div class="row">
+              <div class="row justify-content-between">
                 <div class="col-12 col-md-5 item-text order-md-2">
-                  <h2 class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                  <a href="#">Saiba mais</a>
+                  <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                  <a class="button button-secondary mt-4" href="#">Saiba mais</a>
                 </div> 
-                <div class="col-12 col-md-6 order-md-1">
+                <div class="col-12 col-md-6 order-md-1 col-image">
                   <img src="assets/images/hero/hero-1.jpg">
                 </div>
 
               </div>
             </div>
           </div>
-          <div class="item" style="background-color: transparent;">
+          <div class="item item-red">
             <div class="container">
-              <div class="row">
+              <div class="row justify-content-between">
                 <div class="col-12 col-md-5 item-text order-md-2">
-                  <h2 class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                  <a href="#">Saiba mais</a>
+                  <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
                 </div> 
-                <div class="col-12 col-md-6 order-md-1">
+                <div class="col-12 col-md-6 order-md-1 col-image">
                   <img src="assets/images/hero/hero-2.jpg">
                 </div>
 
               </div>
             </div>
           </div>
-          <div class="item" style="background-color: transparent;">
+          <div class="item item-green">
             <div class="container">
-              <div class="row">
+              <div class="row justify-content-between">
                 <div class="col-12 col-md-5 item-text order-md-2">
-                  <h2 class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                  <a href="#">Saiba mais</a>
+                  <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                  <a class="button button-secondary mt-4" href="#">Saiba mais</a>
                 </div> 
-                <div class="col-12 col-md-6 order-md-1">
+                <div class="col-12 col-md-6 order-md-1 col-image">
                   <img src="assets/images/hero/hero-3.jpg">
                 </div>
 
@@ -111,12 +175,57 @@
           .hero .item {
             width: 100%;
             height: 100vh;
-            background: var(--colorTertiary);
+            padding-top: 96px;
           }
+
+          .hero .item-blue{
+            background-color: #21c0ef;
+          }
+
+          .hero .item-blue .button:hover{
+            color: #21c0ef;
+          }
+
+
+          .hero .item-red{
+            background-color: #ff6a5c;
+
+          }
+
+          
+          .hero .item-red .button:hover{
+            color: #ff6a5c;
+          }
+
+          .hero .item-green{
+            background-color: #09b123;
+          }
+
+          .hero .item-green .button:hover{
+            color: #09b123;
+          }
+
+
+
+
           .hero .item-text{
             display: flex;
             justify-content: center;
             flex-flow: column;
+          }
+
+          .hero .item .container {
+            height: 100%;
+            display: flex;
+          }
+
+          .hero .item .row {
+            padding-top: 5vw;
+            padding-bottom: 5vw;
+          }
+
+          .hero .item .col-image {
+            height: 100%;
           }
 
           .hero .item img{
@@ -126,44 +235,63 @@
           height: 100%;
           }
 
+          .hero .item h2 {
+            color: #fff;
+          }
+
           .button{
-            padding: 0 30px;
+            padding: 0 40px;
             text-decoration: none;
             font-size: 18px;
             font-weight: 600;
-            border-radius: 10px;
-            border: 0;
+            border-radius: 20px;
+            border-width:2px;
+            border-style: solid;
             outline: none;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            height: 50px;
+            height: 46px;
+            text-align: center;
+            align-self: flex-start;
+            transition: all .4s ease;
+          }
+
+          .button:hover{
+            outline: 0;
+            text-decoration: none;
+
           }
 
           .button-primary{
      
+         }
+
+          .button-secondary{
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+
+
+          }
+
+          .button-secondary:hover{
+            background-color: #fff;
+            color: var(--colorPrimary);
           }
         
         
         </style>
 
       </article>
-
-      <article>
-        Produtos
-      </article>
-    
     </section>
   
   </main>
 
-  <footer>
-    Copyright direitos reservados.
-  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-  <script src='main.js'></script>
+  <script src='assets/js/scripts.js'></script>
 </body>
 </html>
