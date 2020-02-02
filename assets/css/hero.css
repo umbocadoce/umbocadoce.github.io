@@ -1,7 +1,13 @@
 .hero .item {
   width: 100%;
-  height: 100vh;
   padding-top: 96px;
+}
+
+@media (min-width: 768px) {
+
+  .hero .item {
+    height: 100vh;
+  }
 }
 
 .hero .item-blue{
@@ -12,12 +18,10 @@
   color: #21c0ef;
 }
 
-
 .hero .item-red{
   background-color: #ff6a5c;
 
 }
-
 
 .hero .item-red .button:hover{
   color: #ff6a5c;
@@ -47,8 +51,10 @@
   padding-bottom: 5vw;
 }
 
-.hero .item .col-image {
-  height: 100%;
+@media (min-width: 768px) {
+  .hero .item .col-image {
+    height: 100%;
+  }
 }
 
 .hero .item img{

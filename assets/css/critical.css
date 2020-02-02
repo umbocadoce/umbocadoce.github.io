@@ -9,6 +9,8 @@ body{
   --colorQuarternary: #FFB4A2;
   --colorQuinary: #FFCDB2;
   --colorSupport: #FFFFFF;
+  --colorSupport1: #ebffd3;
+  --colorSupport2: #fdfbb8;
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -52,6 +54,14 @@ h3{
   background-color: var(--colorQuinary);
 }
 
+.b-s-1{
+  background-color: var(--colorSupport1);
+}
+
+.b-s-2{
+  background-color: var(--colorSupport2);
+}
+
 .header{
   padding: 25px 0 5px;
   position: absolute;
@@ -82,6 +92,23 @@ h3{
   white-space: nowrap;
   text-align: center;
   font-size: 18px;
+  position: relative;
+}
+
+.menu a:after {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background: #fff;
+  opacity: 0;
+  transition: all .4s ease;
+  content: "";
+}
+
+.menu a:hover:after {
+  opacity: 1;
 }
 
 .logo{
@@ -118,7 +145,15 @@ h3{
 }
 
 .button-primary{
+  background-color: transparent;
+  border-color: var(--colorPrimary);
+  color: var(--colorPrimarycolorPrimary);
 
+}
+
+.button-primary:hover{
+  background-color: var(--colorPrimary);
+  color: #fff;
 }
 
 .button-secondary{
@@ -131,6 +166,8 @@ h3{
   background-color: #fff;
   color: var(--colorPrimary);
 }
+
+
 
 .title{
   line-height: 1.5;

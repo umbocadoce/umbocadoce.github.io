@@ -1,5 +1,12 @@
 .section{
-  padding: 7% 0;
+  padding: 12% 0;
+}
+
+@media (min-width: 768px) {
+
+  .section{
+    padding: 7% 0;
+  }
 }
 
 .section img{
@@ -11,4 +18,73 @@
   display: flex;
   justify-content: center;
   flex-flow: column;
+}
+
+.trademark{
+  width: 150px;
+
+}
+
+.trademark img{
+  width: 100%;
+  height: auto;
+}
+
+.footer{
+  padding: 10% 0;
+}
+
+@media (min-width: 768px) {
+
+  .footer{
+    padding: 5% 0;
+  }
+}
+
+.footer .address a {
+  text-decoration: none;
+  color: var(--colorSecondary);
+}
+
+.social a{
+  display: inline-flex;
+  padding: 8px;
+}
+
+.social svg{
+  width: 30px;
+  height: auto;
+  transition: all .3s;
+}
+
+.social svg path {
+  fill: var(--colorPrimary);
+}
+
+.social a:hover svg path {
+  fill: var(--colorSecondary);
+}
+
+.submenu {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.submenu a {
+  color: var(--colorPrimary);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 7px 0;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.whatsapp svg {
+  width: 40px;
+  height: auto;
 }
