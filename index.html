@@ -6,15 +6,16 @@
     <title>Um Bocado Doce</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="assets/css/sanitize.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,500,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/critical.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/hero.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
 </head>
 <body>
-  
   <header class="header">
     <div class="container">
       <div class="logo">
@@ -35,59 +36,10 @@
       </nav>
       </div>
     </div>
-    
   </header>
-  <style>
-    .header{
-      padding: 25px 0 5px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 10;      
-    }
-
-    .header .container{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .menu{
-      display: flex;
-      flex-flow: row;
-
-    }
-
-    .menu a{
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-      padding: 5px 30px;
-      display: block;
-      letter-spacing: 0.02em;
-      white-space: nowrap;
-      text-align: center;
-      font-size: 18px;
-
-    }
-
-    .logo{
-      width: 169px;
-
-    }
-
-    .logo img{
-      max-width: 100%;
-      height: auto;
-    }
-    
-  </style>
 
   <main>
-
     <section>
-
       <article class="hero">
         <div class="hero-carousel" id="hero">
           <div class="item item-blue">
@@ -100,7 +52,6 @@
                 <div class="col-12 col-md-6 order-md-1 col-image">
                   <img src="assets/images/hero/hero-1.jpg">
                 </div>
-
               </div>
             </div>
           </div>
@@ -113,7 +64,6 @@
                 <div class="col-12 col-md-6 order-md-1 col-image">
                   <img src="assets/images/hero/hero-2.jpg">
                 </div>
-
               </div>
             </div>
           </div>
@@ -127,164 +77,26 @@
                 <div class="col-12 col-md-6 order-md-1 col-image">
                   <img src="assets/images/hero/hero-3.jpg">
                 </div>
-
               </div>
             </div>
           </div>
         </div>
-
-        <style>
-          
-          :root{
-            font-size: 16px;
-          }
-          body{
-            --colorPrimary: #2C0E37;
-            --colorSecondary: #5E0B15;
-            --colorTertiary: #E5989B;
-            --colorQuarternary: #FFB4A2;
-            --colorQuinary: #FFCDB2;
-            --colorSupport: #FFFFFF;
-            font-family: 'Nunito', sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            color: #4a4a4a;
-
-          }
-
-          h1, h2, h3, h4, h5, h6{
-            font-family: 'Arvo', sans-serif;
-            font-weight: 400;
-            letter-spacing: 0.01em;
-            color: var(--colorSecondary);
-
-          }
-
-          h1{
-            font-size: 3rem;
-          }
-          
-          h2{
-            font-size: 2.5rem;
-          }
-          
-          h3{
-            font-size: 1.7rem;
-          }
-
-          .hero .item {
-            width: 100%;
-            height: 100vh;
-            padding-top: 96px;
-          }
-
-          .hero .item-blue{
-            background-color: #21c0ef;
-          }
-
-          .hero .item-blue .button:hover{
-            color: #21c0ef;
-          }
-
-
-          .hero .item-red{
-            background-color: #ff6a5c;
-
-          }
-
-          
-          .hero .item-red .button:hover{
-            color: #ff6a5c;
-          }
-
-          .hero .item-green{
-            background-color: #09b123;
-          }
-
-          .hero .item-green .button:hover{
-            color: #09b123;
-          }
-
-
-
-
-          .hero .item-text{
-            display: flex;
-            justify-content: center;
-            flex-flow: column;
-          }
-
-          .hero .item .container {
-            height: 100%;
-            display: flex;
-          }
-
-          .hero .item .row {
-            padding-top: 5vw;
-            padding-bottom: 5vw;
-          }
-
-          .hero .item .col-image {
-            height: 100%;
-          }
-
-          .hero .item img{
-          object-fit: cover;
-          object-position: 50%;
-          width: 100%;
-          height: 100%;
-          }
-
-          .hero .item h2 {
-            color: #fff;
-          }
-
-          .button{
-            padding: 0 40px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 20px;
-            border-width:2px;
-            border-style: solid;
-            outline: none;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: 46px;
-            text-align: center;
-            align-self: flex-start;
-            transition: all .4s ease;
-          }
-
-          .button:hover{
-            outline: 0;
-            text-decoration: none;
-
-          }
-
-          .button-primary{
-     
-         }
-
-          .button-secondary{
-            background-color: transparent;
-            border-color: #fff;
-            color: #fff;
-
-
-          }
-
-          .button-secondary:hover{
-            background-color: #fff;
-            color: var(--colorPrimary);
-          }
-        
-        
-        </style>
-
       </article>
+    </section>
+    <section class="macarons section b-1">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-md-4 item-text order-md-2 article">
+            <article>
+              <h3 class="title title-small">Macarons</h3>
+              <p class="text text-wide mt-3">Doce fino originalmente nascido na Itália que foi aperfeiçoado pelos franceses e muito comum nas pâtisseries francesas.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 item-text order-md-2">
+            <img src="assets/images/home/home-macarons.jpg">
+          </div>
+        </div>
+      </div>
     </section>
   
   </main>

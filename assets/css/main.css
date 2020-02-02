@@ -1,0 +1,14 @@
+.section{
+  padding: 7% 0;
+}
+
+.section img{
+  max-width: 100%;
+  height: auto;
+}
+
+.article{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}

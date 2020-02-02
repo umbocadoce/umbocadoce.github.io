@@ -1,0 +1,63 @@
+.hero .item {
+  width: 100%;
+  height: 100vh;
+  padding-top: 96px;
+}
+
+.hero .item-blue{
+  background-color: #21c0ef;
+}
+
+.hero .item-blue .button:hover{
+  color: #21c0ef;
+}
+
+
+.hero .item-red{
+  background-color: #ff6a5c;
+
+}
+
+
+.hero .item-red .button:hover{
+  color: #ff6a5c;
+}
+
+.hero .item-green{
+  background-color: #09b123;
+}
+
+.hero .item-green .button:hover{
+  color: #09b123;
+}
+
+.hero .item-text{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.hero .item .container {
+  height: 100%;
+  display: flex;
+}
+
+.hero .item .row {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.hero .item .col-image {
+  height: 100%;
+}
+
+.hero .item img{
+object-fit: cover;
+object-position: 50%;
+width: 100%;
+height: 100%;
+}
+
+.hero .item h2 {
+  color: #fff;
+}
