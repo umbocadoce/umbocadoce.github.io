@@ -11,6 +11,7 @@ body{
   --colorSupport: #FFFFFF;
   --colorSupport1: #ebffd3;
   --colorSupport2: #fdfbb8;
+  --fontSecondary: 'Playfair Display', "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -18,7 +19,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Arvo', sans-serif;
+  font-family: var(--fontSecondary);
   font-weight: 400;
   letter-spacing: 0.01em;
   color: var(--colorSecondary);
@@ -95,7 +96,7 @@ h3{
   position: relative;
 }
 
-.menu a:after {
+.menu a:after, .menu a.active:after {
   position: absolute;
   bottom: 0;
   left: 20px;
@@ -107,7 +108,7 @@ h3{
   content: "";
 }
 
-.menu a:hover:after {
+.menu a:hover:after, .menu a.active:after {
   opacity: 1;
 }
 
@@ -171,7 +172,7 @@ h3{
 
 .title{
   line-height: 1.5;
-  font-family: 'Arvo', sans-serif;
+  font-family: var(--fontSecondary);
   font-weight: 400;
   letter-spacing: 0.01em;
   color: var(--colorSecondary);

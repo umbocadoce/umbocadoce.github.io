@@ -1,0 +1,48 @@
+.intro{
+    height: 70vh;
+    position: relative;
+}
+
+.intro > i {
+    background-position: center -60px;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(73,135,60,.3);
+    background-blend-mode: multiply;
+    /*filter: blur(2px);*/
+}
+
+.intro:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(0,0,0,.3);*/
+    z-index: 2;
+    position: absolute;
+}
+
+.banner {
+    position: absolute;
+    z-index: 3;
+    min-height: 30vh;
+    top: calc(100% - 15vh);
+    width: 100%;
+}
+
+.banner-wrapper {
+    background: #fff;
+    padding: 30px 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
