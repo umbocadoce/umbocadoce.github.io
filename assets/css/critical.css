@@ -11,8 +11,9 @@ body{
   --colorSupport: #FFFFFF;
   --colorSupport1: #ebffd3;
   --colorSupport2: #fdfbb8;
+  --fontPrimary: 'Nunito', sans-serif;
   --fontSecondary: 'Playfair Display', "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--fontPrimary);
   font-size: 1rem;
   font-weight: 400;
   color: #4a4a4a;
@@ -21,21 +22,40 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-family: var(--fontSecondary);
   font-weight: 400;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
   color: var(--colorSecondary);
+  font-size: 3rem;
+  margin: 0;
 }
 
-
-h1{
-
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
 }
 
-h2{
-  font-size: 2.5rem;
+h2 {
+  font-size: 2.8rem;
 }
 
 h3{
+  font-size: 2rem;
+}
+
+h4 {
   font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p small {
+  display: block;
 }
 
 .b-1{
@@ -45,12 +65,15 @@ h3{
 .b-2{
   background-color: var(--colorSecondary);
 }
+
 .b-3{
   background-color: var(--colorTertiary);
 }
+
 .b-4{
   background-color: var(--colorQuarternary);
 }
+
 .b-5{
   background-color: var(--colorQuinary);
 }
@@ -124,17 +147,18 @@ h3{
 .button{
   padding: 0 40px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
+  letter-spacing: 0.03em;
   border-radius: 20px;
-  border-width:2px;
+  border-width: 1px;
   border-style: solid;
   outline: none;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 46px;
+  height: 40px;
   text-align: center;
   align-self: flex-start;
   transition: all .4s ease;
@@ -149,7 +173,6 @@ h3{
   background-color: transparent;
   border-color: var(--colorPrimary);
   color: var(--colorPrimarycolorPrimary);
-
 }
 
 .button-primary:hover{
@@ -168,37 +191,32 @@ h3{
   color: var(--colorPrimary);
 }
 
-
-
 .title{
   line-height: 1.5;
   font-family: var(--fontSecondary);
   font-weight: 400;
   letter-spacing: 0.01em;
   color: var(--colorSecondary);
-
 }
 
 .title-small{
   font-size: 2.5rem;
-  
 }
 
 .title-larger{
-  font-size: 2.5rem;
   font-size: 3rem;
 }
 
 .text{
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   margin: 0;
   font-weight: 500;
   color: #6A6A6A;
-
 }
 
 .text-wide{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
 }

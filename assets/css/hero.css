@@ -6,7 +6,7 @@
 @media (min-width: 768px) {
 
   .hero .item {
-    height: 100vh;
+    height: 90vh;
   }
 }
 
@@ -58,10 +58,9 @@
 }
 
 .hero .item img{
-object-fit: cover;
-object-position: 50%;
-width: 100%;
-height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+  width: 100%;
 }
 
 .hero .item h2 {

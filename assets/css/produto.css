@@ -1,48 +1,83 @@
 .intro{
-    height: 70vh;
-    position: relative;
+  height: 70vh;
+  position: relative;
 }
 
 .intro > i {
-    background-position: center -60px;
-    background-size: cover;
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(73,135,60,.3);
-    background-blend-mode: multiply;
-    /*filter: blur(2px);*/
+  background-position: center -60px;
+  background-size: cover;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(73,135,60,.3);
+  background-blend-mode: multiply;
+  /*filter: blur(2px);*/
 }
 
 .intro:before {
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*background-color: rgba(0,0,0,.3);*/
-    z-index: 2;
-    position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(0,0,0,.3);*/
+  z-index: 2;
+  position: absolute;
 }
 
 .banner {
-    position: absolute;
-    z-index: 3;
-    min-height: 30vh;
-    top: calc(100% - 15vh);
-    width: 100%;
+  position: absolute;
+  z-index: 3;
+  min-height: 30vh;
+  top: calc(100% - 15vh);
+  width: 100%;
 }
 
 .banner-wrapper {
-    background: #fff;
-    padding: 30px 50px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+  background: #fff;
+  padding: 30px 50px 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 1px rgba(0,0,0,.15);
+}
+
+.tabela {
+
+}
+
+.tabela-linha {
+  display: flex;
+}
+
+.tabela-titulo {
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+
+.tabela-conteudo {
+  flex: 0 0 65%;
+  max-width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabela-conteudo b {
+  font-family: var(--fontPrimary);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+}
+
+.tabela-coluna {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.tabela-conteudo-linha {
+
 }

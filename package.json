@@ -1,0 +1,14 @@
+{
+  "name": "um-bocado-doce",
+  "version": "1.0.0",
+  "description": "gulp file",
+  "main": " ",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "scripts": {
+    "live": "live-server --port=8888 --entry-file=index.html"
+  },
+  "author": "Um Bocado Doce",
+  "license": "ISC"
+}

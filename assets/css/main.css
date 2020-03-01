@@ -9,7 +9,7 @@
 @media (min-width: 768px) {
 
   .section{
-    padding: 7% 0;
+    padding: 9% 0;
   }
 }
 
@@ -26,7 +26,6 @@
 
 .trademark{
   width: 150px;
-
 }
 
 .trademark img{
@@ -72,7 +71,6 @@
 .submenu {
   display: flex;
   flex-flow: column;
-
 }
 
 .submenu a {
