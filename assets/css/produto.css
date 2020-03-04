@@ -78,6 +78,11 @@
   max-width: 45%;
 }
 
+.tabela-coluna.full{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 .tabela-conteudo-linha {
 
 }
