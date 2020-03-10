@@ -1,8 +1,10 @@
+const screenWidth = (window.innerWidth > 0) ? window.innerWidth : self.innerWidth;
+let animate_In, animate_Out, mode_Slider, mouse_Drag;
+
+
 function hero() {
   const carouselHero = document.getElementById('hero');
-  const screenWidth = (window.innerWidth > 0) ? window.innerWidth : self.innerWidth;
-  let animate_In, animate_Out, mode_Slider, mouse_Drag;
-
+  
   if (screenWidth >= 1178) {
     animate_In = 'tns-fadeIn';
     animate_Out = 'tns-fadeOut';
@@ -48,3 +50,29 @@ function hero() {
 }
 
 hero();
+
+
+function carousel() {
+  const carouselImg = document.getElementById('carousel');
+
+  if (carouselImg != null) {
+    const carousel = tns({
+      container: carouselImg,
+      loop: true,
+      controls: false,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      speed: 600,
+      autoplayButton: false,
+      autoplayButtonOutput: false,
+      gutter: 0,
+      touch: true,
+      items: 1,
+      preventActionWhenRunning: false,
+      mouseDrag: true
+    });
+  }
+}
+
+carousel();
