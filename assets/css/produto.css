@@ -66,6 +66,10 @@
   display: flex;
 }
 
+.tabela-linha-center{
+  justify-content: center;
+}
+
 .tabela-titulo {
   flex: 0 0 35%;
   max-width: 35%;

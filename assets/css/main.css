@@ -9,7 +9,11 @@
 @media (min-width: 768px) {
 
   .section{
-    padding: 7.5% 0;
+    padding: 6.5% 0;
+  }
+
+  .section-macarons{
+    padding: 1.5% 0;
   }
 }
 
