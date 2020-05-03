@@ -51,19 +51,19 @@ h5 {
 
 @media (max-width:991px){
   h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
   }
   
   h2 {
-    font-size: 2rem;
-  }
-  
-  h3{
     font-size: 1.8rem;
   }
   
+  h3{
+    font-size: 1.45rem;
+  }
+  
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
   h5 {
@@ -123,6 +123,13 @@ p small {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  
+  .header .container{
+    flex-flow: column;
+  }
+}
+
 .menu{
   display: flex;
   flex-flow: row;
@@ -139,6 +146,15 @@ p small {
   text-align: center;
   font-size: 18px;
   position: relative;
+}
+
+@media (max-width: 767px) {
+
+  .menu a{
+    font-weight: 400;
+    padding: 4px 20px;
+    font-size: 16px;
+  }
 }
 
 .menu a:after, .menu a.active:after {
@@ -159,6 +175,14 @@ p small {
 
 .logo{
   width: 169px;
+}
+
+@media (max-width: 767px) {
+  
+  .logo{
+    width: 95px;
+    margin-bottom: .8rem;
+  }
 }
 
 .logo img{

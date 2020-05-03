@@ -1,12 +1,13 @@
 .hero .item {
   width: 100%;
-  padding-top: 96px;
+  padding-top: 125px;
 }
 
 @media (min-width: 768px) {
 
   .hero .item {
     height: 90vh;
+    padding-top: 96px;
   }
 }
 
@@ -41,6 +42,16 @@
   flex-flow: column;
 }
 
+@media (max-width: 767px) {
+
+  .hero .item-text {
+    min-height: 190px;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+
 .hero .item .container {
   height: 100%;
   display: flex;
@@ -65,4 +76,8 @@
 
 .hero .item h2 {
   color: #fff;
+}
+
+.hero .tns-ovh {
+ 
 }

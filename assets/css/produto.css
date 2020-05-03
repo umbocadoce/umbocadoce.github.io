@@ -114,6 +114,11 @@
     margin-top: 2rem;
   }
 
+  .tabela-conteudo b{
+    font-size: 1rem;
+  }
+
+
   .tabela-linha{
     flex-flow: column;
   }
@@ -155,4 +160,26 @@
 
 .image-carousel .tns-item.active {
   z-index: 2;
+}
+
+
+
+/* Colunas fluidas */
+.fluido.-wrap {
+  column-width: auto;
+  column-count: 2;
+  column-gap: 30px;
+  column-fill: auto;
+}
+
+.fluido.-item {
+  padding-top: 1.5rem;
+  break-inside: avoid;
+}
+
+@media (min-width: 992px) {
+
+  .fluido.-wrap {
+    column-count: 3;
+  }
 }
