@@ -32,6 +32,10 @@
   background-color: #09b123;
 }
 
+.hero .item-brown{
+  background-color: #91583b;
+}
+
 .hero .item-green .button:hover{
   color: #09b123;
 }
