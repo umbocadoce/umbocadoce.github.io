@@ -40,6 +40,10 @@
   color: #09b123;
 }
 
+.hero .item-brown .button:hover{
+  color: #91583b;
+}
+
 .hero .item-text{
   display: flex;
   justify-content: center;
